@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-  has_many :reviews
-  validates :name, :address, :category
-  restaurant.save
+  def index
+    @restaurants = Restaurant.all
+  end
 end
